@@ -1,0 +1,34 @@
+%rwd-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+//variables
+$anim-btn-time: .25s;
+//img
+.img-center {
+    margin: auto;
+}
+
+.rwd-img {
+    @extend %rwd-img;
+}
+
+.rwd-img-center {
+    @extend %rwd-img;
+    margin: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.dn {
+    display: none;
+}
+
+p {
+    line-height: 2;
+}
