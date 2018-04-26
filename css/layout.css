@@ -10566,7 +10566,8 @@ header {
         display: inline-block; } }
   header.header-fix {
     position: fixed;
-    width: 100%; }
+    width: 100%;
+    top: 0; }
     header.header-fix .tool-bar {
       position: absolute;
       right: 0; }
@@ -10740,8 +10741,12 @@ header {
   position: absolute;
   bottom: 0;
   width: 100%; }
+  @media (max-width: 768px) {
+    .index footer {
+      position: relative; } }
 
 .banner {
+  margin-top: 120px;
   position: relative;
   width: 100%;
   min-width: 900px;
@@ -10758,7 +10763,7 @@ header {
     .banner .container h2 {
       position: absolute;
       z-index: 9;
-      bottom: 40%;
+      top: 10%;
       left: 0%;
       font-weight: bold;
       font-size: 55px;
@@ -10768,12 +10773,16 @@ header {
   @media (max-width: 768px) {
     .banner {
       min-width: auto;
-      background-position: top right; }
+      background-position: center top;
+      margin-top: 70px;
+      background-size: 120% auto; }
       .banner .container {
-        height: 450px; }
+        height: 220px;
+        position: relative; }
         .banner .container h2 {
           font-size: 35px;
           left: 5%;
+          top: auto;
           bottom: 10%; } }
 
 .pageinfo {

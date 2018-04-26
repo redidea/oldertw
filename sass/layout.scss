@@ -63,6 +63,7 @@ header {
     &.header-fix {
         position: fixed;
         width: 100%; // .keyword-list{display:none;}
+        top: 0;
         .tool-bar {
             position: absolute;
             right: 0;
@@ -284,17 +285,21 @@ header {
         position: absolute;
         bottom: 0;
         width: 100%;
+        @media (max-width: $screen-sm) {
+            position: relative;
+        }
     }
 }
 
 .banner {
+    margin-top: 120px;
     .container {
         position: relative;
         height: 780px;
         h2 {
             position: absolute;
             z-index: 9;
-            bottom: 40%;
+            top: 10%;
             left: 0%;
             font-weight: bold;
             font-size: 55px;
@@ -315,12 +320,16 @@ header {
     background-size: cover;
     @media (max-width: $screen-sm) {
         min-width: auto;
-        background-position: top right;
+        background-position: center top;
+        margin-top: 70px;
+        background-size: 120% auto;
         .container {
-            height: 450px;
+            height: 220px;
+            position: relative;
             h2 {
                 font-size: 35px;
                 left: 5%;
+                top: auto;
                 bottom: 10%;
             }
         }
