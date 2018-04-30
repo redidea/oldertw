@@ -11,16 +11,33 @@ body {
     background-repeat: repeat;
     background-position: center 0;
     background-image: url(../images/bg.jpg);
-    font-size: 20px;
+    font-size: 24px;
     text-align: justify;
     @media (max-width: $screen-sm) {
         // background-position:right 0;
     }
     &.lg {
         font-size: 24px;
+        main .main-list .item .info p {
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+    }
+    &.md {
+        font-size: 20px;
+        main .main-list .item .info p {
+            -webkit-line-clamp: 3;
+            height: 78px;
+            overflow: hidden;
+        }
     }
     &.sm {
-        font-size: 15px;
+        font-size: 16px;
+        main .main-list .item .info p {
+            -webkit-line-clamp: 4;
+            height: 76px;
+            overflow: hidden;
+        }
     }
 }
 
@@ -544,8 +561,8 @@ main {
                 p {
                     font-size: .8em;
                     margin-bottom: 5px;
-                    line-height: 1.8;
-                    height: 84px;
+                    line-height: 1.6;
+                    height: 86px;
                     display: -webkit-box;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -604,6 +621,9 @@ main {
             font-size: 1.5rem;
         }
         @media (max-width: $screen-sm) {
+            h5{
+                font-size: 2rem;
+            }
             h2 {
                 text-align: center;
             }

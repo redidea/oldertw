@@ -10528,12 +10528,25 @@ body {
   background-repeat: repeat;
   background-position: center 0;
   background-image: url(../images/bg.jpg);
-  font-size: 20px;
+  font-size: 24px;
   text-align: justify; }
   body.lg {
     font-size: 24px; }
+    body.lg main .main-list .item .info p {
+      -webkit-line-clamp: 3;
+      overflow: hidden; }
+  body.md {
+    font-size: 20px; }
+    body.md main .main-list .item .info p {
+      -webkit-line-clamp: 3;
+      height: 78px;
+      overflow: hidden; }
   body.sm {
-    font-size: 15px; }
+    font-size: 16px; }
+    body.sm main .main-list .item .info p {
+      -webkit-line-clamp: 4;
+      height: 76px;
+      overflow: hidden; }
 
 header {
   z-index: 99;
@@ -10944,8 +10957,8 @@ main {
       main .main-list .item .info p {
         font-size: .8em;
         margin-bottom: 5px;
-        line-height: 1.8;
-        height: 84px;
+        line-height: 1.6;
+        height: 86px;
         display: -webkit-box;
         overflow: hidden;
         -o-text-overflow: ellipsis;
@@ -10992,6 +11005,8 @@ main {
     text-align: center;
     font-size: 1.5rem; }
   @media (max-width: 768px) {
+    main .box-more h5 {
+      font-size: 2rem; }
     main .box-more h2 {
       text-align: center; } }
 
